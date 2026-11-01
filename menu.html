@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+            <div class="container">
+                <a href="index.html" class="navbar-brand logo">Quiet Corner</a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#menu" aria-controls="menu"
+                    aria-expanded="false" aria-label="Buka menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="menu">
+                    <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-3 py-2 py-lg-0">
+                        <li class="nav-item"><a class="nav-link aktif" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link aktif" href="menu.html">Menu</a></li>
+                        <li class="nav-item"><a class="nav-link aktif" href="reservasi.html">Reservasi</a></li>
+                        <li class="nav-item">
+                            <button id="tombolTema" class="btn btn-tema" type="button">🌙 Dark Mode</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>       
+    </header>
+
+    <main class="halaman-menu">
+        <div class="container">
+            <h1 class="judul-section text-center mb-2"> Menu</h1>
+            <p class="text-center mb-5"> Racikan kopi dan minuman favorit di Quiet Corner</p>
+
+            <!---- COFFEE----->
+            <section class="mb-5">
+                <h2 class="h3 judul-section mb-3"> Coffee</h2>
+                <div class="menu-flex">
+                    <article class="menu-item card">
+                        <span class="badge-best">Bestseller</span>
+                        <img src="img/kopisusu.jpg" alt="Kopi Susu Gula Aren">
+                        <h3 class="h5">Kopi Susu Gula Aren</h3>
+                        <p>Kopi, susu segar, dan manis gula aren</p>
+                        <span class="harga">Rp22.000</span>
+                    </article>
+                    <article class="menu-item card">
+                        <span class="badge-best">Bestseller</span>
+                        <img src="img/latte.jpg" alt="Caffe Latte">
+                        <h3 class="h5">Caffe Latte</h3>
+                        <p>Espresso dengan susu lembut dan krema tipis</p>
+                        <span class="harga">Rp25.000</span>
+                    </article>
+                    <article class="menu-item card">
+                        <img src="img/americano.jpg" alt="Americano">
+                        <h3 class="h5">Americano</h3>
+                        <p>Espresso segar dengan air panas</p>
+                        <span class="harga">Rp20.000</span>
+                    </article>                
+                </div>
+            </section>
+
+            <!--NON-COFFEE-->
+            <section class="mb-5">
+                <h2 class="h3 judul-section mb-3">Non-Coffee</h2>
+                <div class="menu-flex">
+                    <article class="menu-item card">
+                        <span class="badge-best">Bestseller</span>
+                        <img src="img/matchalatte.jpg" alt="Matcha Latte">
+                        <h3 class="h5">Matcha Latte</h3>
+                        <p>Matcha premium dengan susu, creamy dan segar.</p>
+                        <span class="harga">Rp26.000</span>
+                    </article>
+                    <article class="menu-item card">
+                        <img src="img/matchaberry.jpg" alt="Matcha Berry">
+                        <h3 class="h5">Matcha Berry</h3>
+                        <p>Matcha berpadu saus berry, manis asam yang segar.</p>
+                        <span class="harga">Rp28.000</span>
+                    </article>
+                    <article class="menu-item card">
+                        <span class="badge-best">Bestseller</span>
+                        <img src="img/milktea.jpg" alt="Milk Tea">
+                        <h3 class="h5">Milk Tea</h3>
+                        <p>Teh pilihan dengan susu, pas diminum dingin.</p>
+                        <span class="harga">Rp20.000</span>
+                    </article>
+                </div>
+            </section>
+
+            <section>
+                <h2 class="h4 judul-section mb-3">Ringkasan Harga</h2>
+                <div class="table-responsive">
+                    <table class="table table-dark table-striped table-bordered align-middle">
+                        <thead>
+                            <tr>
+                                <th>Menu</th>
+                                <th>Kategori</th>
+                                <th>Harga</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>Kopi Susu Gula Aren</td><td>Coffee</td><td>Rp22.000</td><td>Bestseller</td></tr>
+                            <tr><td>Caffe Latte</td><td>Coffee</td><td>Rp25.000</td><td>Bestseller</td></tr>
+                            <tr><td>Americano</td><td>Coffee</td><td>Rp20.000</td><td>-</td></tr>
+                            <tr><td>Matcha Latte</td><td>Non-Coffee</td><td>Rp26.000</td><td>Bestseller</td></tr>
+                            <tr><td>Matcha Berry</td><td>Non-Coffee</td><td>Rp28.000</td><td>-</td></tr>
+                            <tr><td>Milk Tea</td><td>Non-Coffee</td><td>Rp20.000</td><td>Bestseller</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer text-center py-3">
+        <small>&copy; 2026 Quiet Corner Cafe. Jl. Backburner No. 1, Kediri.</small>
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
